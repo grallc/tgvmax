@@ -1,22 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
 import City from './City'
+import Background from './Background'
+import './App.css'
 
-function App() {
+function App () {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <h1>Vite + React</h1>
-      <div className="form">
-        <City />
-        <City />
+    <>
+      <Background />
+      <div className="content">
+        <h1>TGV Max</h1>
+        <div id="form">
+          <City />
+          <City />
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </>
   )
 }
 
